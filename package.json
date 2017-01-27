@@ -1,0 +1,25 @@
+{
+  "name": "jg-oxfam",
+  "version": "1.0.0",
+  "description": "A page listing Oxfam's most recent donations from the JG API",
+  "main": "start.js",
+  "scripts": {
+    "start": "node start.js",
+    "test": "node /src/app.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cleop/JG-Oxfam.git"
+  },
+  "author": "Cleo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cleop/JG-Oxfam/issues"
+  },
+  "homepage": "https://github.com/Cleop/JG-Oxfam#readme",
+  "dependencies": {
+    "hapi": "^16.1.0",
+    "inert": "^4.1.0",
+    "request": "^2.79.0"
+  }
+}
