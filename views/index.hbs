@@ -1,22 +1,22 @@
-<div class="content overlay">
-  <h3>Donation Results</h3>
+<div class="data">
+  <h3 class="data__title">Donation Results</h3>
 
-<ul>
-  {{#each name}}
-  <li>{{this}}</li>
-  {{/each}}
-</ul>
+  <ul class="data__entity--name">
+    {{#each name}}
+    <li>{{this}}</li>
+    {{/each}}
+  </ul>
 
-<ul>
-  {{#each messages}}
-  <li>{{this}}</li>
-  {{/each}}
-</ul>
+  <ul class="data__entity--message">
+    {{#each messages}}
+    <li>{{this}}</li>
+    {{/each}}
+  </ul>
 
-<ul>
-  {{#each amounts}}
-  <li>£{{this}}</li>
-  {{/each}}
-</ul>
+  <ul class="data__entity--amount">
+    {{#each amounts}}
+    <li>£{{this}}</li>
+    {{/each}}
+  </ul>
 
 </div>
