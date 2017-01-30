@@ -5,11 +5,7 @@ body {
   font-weight: 300;
 }
 
-.data {
+.donations {
   background-color: white;
   padding: 0.1em 0.8em;
-}
-
-.data__entity {
-  list-style: none;
 }
