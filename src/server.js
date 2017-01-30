@@ -32,14 +32,14 @@ const routes = [
           context.name = results.map(function(a) { return a.donorDisplayName;});
           context.amounts = results.map(function(a) { return a.amount;});
           context.messages = results.map(function(a) { return a.message;});
-          console.log('This is the callback function:');
+          console.log('Callback function:');
           console.log(`Donor: ${context.name[0]}, Amount donated: £${context.amounts[0]}, Message: ${context.messages[0]}`);
-          buildView();
+          buildView(context);
         };
 
         function buildView (context) {
-          console.log('This is the buildView function:');
-          console.log(`The entire context object: ${context}`);
+          console.log('BuildView function:');
+          console.log(`Donor: ${context.name[0]}, Amount donated: £${context.amounts[0]}, Message: ${context.messages[0]}`);
           reply.view('index', context);
         }
         request(options, callback);
