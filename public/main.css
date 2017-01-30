@@ -1,3 +1,6 @@
 body {
-  background-color: #D3D3D3;
+  background-color: rgba(245,245,245,.5);
+  color: #262626;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-weight: 300;
 }
