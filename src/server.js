@@ -1,7 +1,6 @@
 const Hapi = require('hapi');
 const Inert = require('inert');
 const Vision = require('vision');
-// const buildDonations = require('getDonations');
 const request = require('request');
 
 const routes = [
@@ -32,14 +31,10 @@ const routes = [
           context.name = results.map(function(a) { return a.donorDisplayName;});
           context.amounts = results.map(function(a) { return a.amount;});
           context.messages = results.map(function(a) { return a.message;});
-          console.log('Callback function:');
-          console.log(`Donor: ${context.name[0]}, Amount donated: £${context.amounts[0]}, Message: ${context.messages[0]}`);
           buildView(context);
         };
 
         function buildView (context) {
-          console.log('BuildView function:');
-          console.log(`Donor: ${context.name[0]}, Amount donated: £${context.amounts[0]}, Message: ${context.messages[0]}`);
           reply.view('index', context);
         }
         request(options, callback);
