@@ -1,12 +1,23 @@
 <div class="content overlay">
-  <p>Donation Results</p>
-  <p>{{name}}</p>
-  <p>{{messages}}</p>
-  <p>{{amounts}}</p>
+  <h3>Donation Results</h3>
 
-  <!-- <ul class="content--options">
-    {{#each donation}}
-    {{{link this}}}
-    {{/each}}
-  </ul> -->
+<ul>
+  {{#each name}}
+  <li>{{this}}</li>
+  {{/each}}
+</ul>
+
+<ul>
+  {{#each messages}}
+  <li>{{this}}</li>
+  {{/each}}
+</ul>
+
+<ul>
+  {{#each amounts}}
+  <li>{{this}}</li>
+  {{/each}}
+</ul>
+
+
 </div>
