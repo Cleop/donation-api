@@ -4,3 +4,12 @@ body {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-weight: 300;
 }
+
+.data {
+  background-color: white;
+  padding: 0.1em 0.8em;
+}
+
+.data__entity {
+  list-style: none;
+}
