@@ -1,22 +1,28 @@
-<div class="data">
-  <h3 class="data__title">Donation Results</h3>
+<div class="donations">
+  <h3 class="donations__title">Donation Results</h3>
 
-  <ul class="data__entity data__entity--name">
-    {{#each name}}
-    <li>{{this}}</li>
-    {{/each}}
-  </ul>
+  <div class="donations__recent-entry">
+    <p>{{lookup name 0}}</p>
+    <p>£{{lookup amounts 0}}</p>
+    <p>{{lookup messages 0}}</p>
+  </div>
 
-  <ul class="data__entity data__entity--message">
-    {{#each messages}}
-    <li>{{this}}</li>
-    {{/each}}
-  </ul>
+  <div class="donations__recent-entry">
+    <p>{{lookup name 1}}</p>
+    <p>£{{lookup amounts 1}}</p>
+    <p>{{lookup messages 1}}</p>
+  </div>
 
-  <ul class="data__entity data__entity--amount">
-    {{#each amounts}}
-    <li>£{{this}}</li>
-    {{/each}}
-  </ul>
+  <div class="donations__recent-entry">
+    <p>{{lookup name 2}}</p>
+    <p>£{{lookup amounts 2}}</p>
+    <p>{{lookup messages 2}}</p>
+  </div>
+
+  <div class="donations__recent-entry">
+    <p>{{lookup name 3}}</p>
+    <p>£{{lookup amounts 3}}</p>
+    <p>{{lookup messages 3}}</p>
+  </div>
 
 </div>
