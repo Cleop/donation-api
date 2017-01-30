@@ -16,7 +16,7 @@ const routes = [
   },
   {
     method: 'GET',
-    path: '/results',
+    path: '/',
     handler: (req, reply) => {
       let context = {};
 
