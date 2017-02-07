@@ -1,6 +1,21 @@
 # JG-Oxfam
 A page listing Oxfam's most recent donations from the JG API
 
+## Setup
+
+- To install npm dependencies:
+```
+npm install
+```
+- To run the server:
+```
+npm run start
+```
+- To run tests:
+```
+npm test
+```
+
 ## What?
 Create a web app to display the latest donations for a charity (Oxfam) using React and Node.js.
 
