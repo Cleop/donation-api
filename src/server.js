@@ -1,7 +1,6 @@
 const Hapi = require('hapi');
 const Inert = require('inert');
 const Vision = require('vision');
-// const buildDonations = require('getDonations');
 const request = require('request');
 
 const routes = [
@@ -16,7 +15,7 @@ const routes = [
   },
   {
     method: 'GET',
-    path: '/results',
+    path: '/',
     handler: (req, reply) => {
       let context = {};
 
@@ -32,14 +31,10 @@ const routes = [
           context.name = results.map(function(a) { return a.donorDisplayName;});
           context.amounts = results.map(function(a) { return a.amount;});
           context.messages = results.map(function(a) { return a.message;});
-          console.log('This is the callback function:');
-          console.log(`Donor: ${context.name[0]}, Amount donated: £${context.amounts[0]}, Message: ${context.messages[0]}`);
-          buildView();
+          buildView(context);
         };
 
         function buildView (context) {
-          console.log('This is the buildView function:');
-          console.log(`The entire context object: ${context}`);
           reply.view('index', context);
         }
         request(options, callback);

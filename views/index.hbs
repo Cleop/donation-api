@@ -1,8 +1,28 @@
-<div class="content overlay">
-  <p>Donation Results</p>
-  <ul class="content--options">
-    {{#each donation}}
-    {{{link this}}}
-    {{/each}}
-  </ul>
+<div class="donations">
+  <h3 class="donations__title">Donation Results</h3>
+
+  <div class="donations__recent-entry">
+    <p>{{lookup name 0}}</p>
+    <p>£{{lookup amounts 0}}</p>
+    <p>"{{lookup messages 0}}"</p>
+  </div>
+
+  <div class="donations__recent-entry">
+    <p>{{lookup name 1}}</p>
+    <p>£{{lookup amounts 1}}</p>
+    <p>"{{lookup messages 1}}"</p>
+  </div>
+
+  <div class="donations__recent-entry">
+    <p>{{lookup name 2}}</p>
+    <p>£{{lookup amounts 2}}</p>
+    <p>"{{lookup messages 2}}"</p>
+  </div>
+
+  <div class="donations__recent-entry">
+    <p>{{lookup name 3}}</p>
+    <p>£{{lookup amounts 3}}</p>
+    <p>"{{lookup messages 3}}"</p>
+  </div>
+
 </div>
