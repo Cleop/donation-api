@@ -20,7 +20,7 @@ npm test
 Create a web app to display the latest donations for a charity (Oxfam) using React and Node.js.
 
 ## Why?
-To demonstrate my understanding of using React, Node, TDD and API calls. As well as for the following user stories:
+To demonstrate my understanding of using React, Node and API calls. As well as for the following user stories:
 
 **As an**... Oxfam employee <br>
 **I want to**... be able to review recent donations <br>
@@ -37,7 +37,6 @@ To demonstrate my understanding of using React, Node, TDD and API calls. As well
 ## How?
 
 - Deliver an MVP in 1 day
-- TDD
 - Using node and hapi
 - Tape testing
 - CSS in keeping with the [JG site](https://www.justgiving.com/oxfam)
@@ -46,12 +45,9 @@ To demonstrate my understanding of using React, Node, TDD and API calls. As well
 
 ## Time Constraints
 
-In the event that I do not complete the page in my allocated time limit I will document my proposed next steps for completing the project.
+1 day delivery for end result as first goal (if time, refactor). Second aim to use react.
 
-## Outcome:
+## Next steps:
 
-I stuck to the time suggested (1 day), prioritised getting the data from JG API, but didn’t have time to get the whole task finished. The data fetching in server.js (and getDonations.js where there’s some duplication to show my experimenting at the time of finish) works. My next steps were going to be re-formatting this data into an appropriate form to use in my handlebars templates page, followed by the styling last.
+Learn react and then redo using react.
 
-## Learnings:
-
-I will take the opportunity to explore what might have gone wrong in my handling of the API data so that I can learn from this. Following this, my next priority is to learn react as I feel it's a invaluable framework to know and its focus on functional programming could have leant itself well to this task.
